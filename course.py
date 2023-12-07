@@ -62,7 +62,7 @@ with open("tokens.json", "r") as f:
     tokens = json.load(f)
 
 log = []
-backup_id = "2493073" 
+backup_id = int(input("Enter VK user ID: ")) 
 backup_folder = "backup" 
 vk_client = VKAPIClient(tokens["vk"], backup_id)
 yadi_client = YandexAPIClient(tokens["yadi"])
